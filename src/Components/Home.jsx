@@ -6,6 +6,8 @@ import { SliderKatrina } from './Slider';
 const Home = () => {
 
 
+
+
     const katrinaSlider = [
         {
             image: "https://www.netmeds.com/images/cms/aw_rbslider/slides/1664256054_Web_Homecc.jpg",
@@ -27,7 +29,7 @@ const Home = () => {
             image: "https://www.netmeds.com/images/cms/aw_rbslider/slides/1654275901_Web_Home_Kareenasdhdh.jpg",
             alt: "",
         },
-       
+
     ]
 
     const imageSlider = [
@@ -62,12 +64,12 @@ const Home = () => {
         {
             image: "https://www.netmeds.com/images/category/3107/thumb/dressing_1.jpg",
             alt: "",
-            title:"Dressing"
+            title: "Dressing"
         },
         {
             image: "https://www.netmeds.com/images/category/501/thumb/family_nutrition_1.jpg",
             alt: "",
-            title:"Family Nutrition"
+            title: "Family Nutrition"
         },
         {
             image: "https://www.netmeds.com/images/category/3141/thumb/respiratory_supplies_1.jpg",
@@ -77,14 +79,14 @@ const Home = () => {
         {
             image: "https://www.netmeds.com/images/category/3758/thumb/lotions_creams_0.jpg",
             alt: "",
-            title :"Lotions & Creams"
+            title: "Lotions & Creams"
         },
         {
             image: "https://www.netmeds.com/images/category/v1/491/thumb/homeopathy_2.jpg",
             alt: "",
-            title :"Homeopathy"
+            title: "Homeopathy"
         },
-      
+
     ]
 
 
@@ -116,9 +118,38 @@ const Home = () => {
     ]
 
     return (
+
+
         <Box backgroundColor={"#f3f7fb"}>
 
-            <HStack margin={"auto"} border={"1px solid black"} gap={"20px"} justifyContent={"center"} width={"80%"}>
+            {/* Navbar */}
+
+            <Box width={"100%"} backgroundColor="#32aeb1" margin={"auto"} paddingY="10px" >
+                <HStack width={"80%"} margin={"auto"} gap={"10px"} justifyContent={"space-evenly"}>
+                    <HStack>
+                        <Image padding={"5px"} width={"20%"} borderRadius={"50%"} backgroundColor="#41ced0" src="https://i.ibb.co/Y8Rmx27/medicine.png" alt="" />
+                        <Text color={"white"} >Medicine</Text>
+                    </HStack>
+                    <HStack>
+                        <Image padding={"5px"} width={"20%"} borderRadius={"50%"} backgroundColor="#f3428a" src="https://i.ibb.co/JBWQnV1/prescription.png" alt="" />
+                        <Text color={"white"} >Wellness</Text>
+                    </HStack>
+                    <HStack>
+                        <Image padding={"5px"} width={"20%"} borderRadius={"50%"} backgroundColor="#76c334" src="https://i.ibb.co/nsV6vBc/flask.png" alt="" />
+                        <Text color={"white"} >Lab Tests</Text>
+                    </HStack>
+                    <HStack>
+                        <Image padding={"5px"} width={"20%"} borderRadius={"50%"} backgroundColor="#ffb81b" src="https://i.ibb.co/GJgfD5m/perfume.png" alt="" />
+                        <Text color={"white"} >Beauty</Text>
+                    </HStack>
+                    <HStack>
+                        <Image padding={"5px"} width={"20%"} borderRadius={"50%"} backgroundColor="#32aeb1" src="https://i.ibb.co/S5g230Z/health-check.png" alt="" />
+                        <Text color={"white"} >Health Corner</Text>
+                    </HStack>
+                </HStack>
+            </Box>
+
+            <HStack margin={"auto"}  gap={"20px"} justifyContent={"center"} width={"80%"}>
                 <Text>COVID Essentials</Text>
                 <Text>Diabetes</Text>
                 <Text>Eyewear</Text>
@@ -137,39 +168,38 @@ const Home = () => {
                 {/* <Image margin={"10px"} src='https://www.netmeds.com/images/cms/aw_rbslider/slides/1664256054_Web_Homecc.jpg' alt='img' /> */}
                 <SliderKatrina data={katrinaSlider} />
             </Box>
-
-            <HStack height={"100px"} width={"98%"} border={"1px solid black"} margin={"auto"} justifyContent={"center"} gap={"20px"}>
-                <HStack width={"30%"} height={"80px"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"}   >
+            <HStack height={"100px"} width={"98%"}  margin={"auto"} justifyContent={"center"} gap={"20px"}>
+                <HStack width={"30%"} height={"80px"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} gap={'2'} alignItems={"center"}  >
                     <Image marginLeft={"15px"} width={"12%"} src='https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg' />
-                    <VStack>
+                    <VStack align={"start"} lineHeight="15px">
                         <Text fontWeight={"bold"} fontSize={"20px"} >Ordrer Medicine</Text>
                         <Text fontWeight={"bold"} color={"#5ea526"} > Save Upto 25% off</Text>
                     </VStack>
                 </HStack>
-
-                <HStack width={"30%"} height={"80px"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"}   >
+              
+                <HStack width={"30%"} height={"80px"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} gap={'2'} alignItems={"center"} >
                     <Image marginLeft={"15px"} width={"10%"} src='https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg' />
-                    <VStack>
+                    <VStack align={"start"} lineHeight="15px">
                         <Text fontWeight={"bold"} fontSize={"20px"} >Beauty</Text>
                         <Text fontWeight={"bold"} color={"#5ea526"} > Save Upto 40% off</Text>
                     </VStack>
                 </HStack>
 
-                <HStack width={"30%"} height={"80px"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"}   >
+                <HStack width={"30%"} height={"80px"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} gap={'2'} alignItems={"center"} >
                     <Image marginLeft={"15px"} width={"10%"} src='https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg' />
-                    <VStack>
+                    <VStack align={"start"} lineHeight="15px">
                         <Text fontWeight={"bold"} fontSize={"20px"} >Wellness</Text>
                         <Text fontWeight={"bold"} color={"#5ea526"} > Flat 50% off</Text>
                     </VStack>
                 </HStack>
 
             </HStack>
-
+<br />
             <Text fontWeight={"bold"} fontSize={"23px"} margin={"15px 30px"} display={"flex"} alignItems={"flex-start"} >  Payment Partner Offers</Text>
 
 
-            <HStack height={"100px"} width={"98%"} border={"1px solid black"} margin={"auto"} justifyContent={"center"} gap={"20px"}>
-                <HStack width={"30%"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} divider={<StackDivider borderColor={"gray.500"} />}  >
+            <HStack width={"98%"}  margin={"auto"} justifyContent={"center"} gap={"20px"}>
+                <HStack padding={"10px"} gap={"1"} width={"30%"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} divider={<StackDivider borderColor={"gray.500"} />}  >
                     <Image width={"8%"} src='https://www.netmeds.com/images/cms/offers/1661958761_Simpl_Icon.png' />
                     <VStack alignItems={"flex-start"}>
                         <Text align={"start"} fontWeight={"bold"} fontSize={"12px"}  > Get up to Rs. 500 Simpl Cashback* (5%)!.. </Text>
@@ -177,7 +207,7 @@ const Home = () => {
                     </VStack>
                 </HStack>
 
-                <HStack width={"30%"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} divider={<StackDivider borderColor={"gray.500"} />} >
+                <HStack padding={"10px"} gap={"1"} width={"30%"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} divider={<StackDivider borderColor={"gray.500"} />} >
                     <Image width={"8%"} src='https://www.netmeds.com/images/cms/offers/1660838140_twid.png' />
                     <VStack align={"start"}  >
                         <Text align={"start"} fontWeight={"bold"} fontSize={"12px"} >Use Pay with Rewards , Get max. Rs. 1000 Cashback!...</Text>
@@ -185,7 +215,7 @@ const Home = () => {
                     </VStack>
                 </HStack>
 
-                <HStack width={"30%"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} divider={<StackDivider borderColor={"gray.500"} />}  >
+                <HStack padding={"10px"} gap={"1"} width={"30%"} boxShadow={" rgba(0, 0, 0, 0.35) 0px 5px 15px"} borderRadius={"8px"} divider={<StackDivider borderColor={"gray.500"} />}  >
                     <Image width={"8%"} src='https://www.netmeds.com/images/cms/offers/1616682689_paytm.png' />
                     <VStack align={"start"} >
                         <Text align={"start"} fontWeight={"bold"} fontSize={"12px"} >Get up to Rs. 300 Paytm Cashback!.</Text>
@@ -194,8 +224,8 @@ const Home = () => {
                 </HStack>
 
             </HStack  >
-
-            <HStack height={"150px"} width={"100%"} border={"1px solid black"} divider={<StackDivider borderColor={"gray.500"} />} >
+<br />
+            <HStack height={"150px"} width={"100%"} divider={<StackDivider borderColor={"gray.500"} />} >
 
                 <HStack width={"50%"} justifyContent={"space-around"}>
                     <VStack align={"start"}>
@@ -203,7 +233,7 @@ const Home = () => {
                         <Text align={"start"}>Your previously ordred products</Text>
                         <HStack>
                             <Text fontWeight={"bold"} color={"#32aeb1"}>View Orders</Text>
-                            <Button align={"start"} padding={"4px"} bg={"#32aeb1"} color={"white"} borderRadius={"50%"}>  </Button>
+                            <Button align={"start"} padding={"4px"} bg={"#32aeb1"} color={"white"} borderRadius={"50%"}> &#x276F; </Button>
                         </HStack>
                     </VStack>
 
@@ -238,7 +268,7 @@ const Home = () => {
                 <Text fontWeight={"600"} fontSize={"24px"} align={"start"} marginLeft={"20px"}> New Arrival</Text>
                 <SliderNewArrivals data={imageNewArrival} />
             </VStack>
-           
+
 
         </Box>
     )
