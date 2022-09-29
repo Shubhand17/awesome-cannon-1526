@@ -1,19 +1,20 @@
-import { Box, HStack , Image , Text ,VStack , Heading} from '@chakra-ui/react'
-import React from 'react'
+import { Box, HStack , Image , Text ,VStack , Heading, Divider , Input} from '@chakra-ui/react'
+import React from 'react';
+
 
 export const Footer = () => {
   return (
-   <Box height={"600px"} width={"100%"} border={"1px solid black"}  >
+   <Box height={"600px"} width={"100%"}  >
   <HStack gap={"50px"} width={"70%"} align={"start"} margin={"50px 100px"} >
   <Image width={"18%"} src={"https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg"}  alt={""}/>
     <Text color={"gray"} align={"start"} >Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India.</Text>
    
   </HStack>
 
-  <HStack>
+  <HStack width={"100%"}   margin={"auto"} align={"start"} justifyContent={"space-evenly"}>
 
-<VStack>
-     <Text>Company</Text>   
+<VStack align={"start"}>
+     <Text fontWeight={"bold"}>Company</Text>   
      <Text>About Netmeds</Text>   
      <Text>Customers Speak</Text>   
      <Text>In The News</Text>   
@@ -26,8 +27,8 @@ export const Footer = () => {
      <Text>Contact</Text>  
 </VStack>
 
-<VStack>
-    <Text>SHOPPING</Text>
+<VStack align={"start"}>
+    <Text fontWeight={"bold"}>SHOPPING</Text>
      <Text>Browse by A-Z</Text>   
      <Text>Browse by Manufacturers</Text>   
      <Text>Health Articles</Text>   
@@ -36,31 +37,39 @@ export const Footer = () => {
        
 </VStack>
 
-<VStack>
-    <Text>SOCIAL</Text>
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
+<VStack align={"start"}>
+    <Text fontWeight={"bold"}>SOCIAL</Text>
+     <Text>Patients Alike</Text>   
+     <Text>Facebook</Text>   
+     <Text>Twitter</Text>   
+     <Text>Linkedin</Text>   
+     <Text>Youtube</Text>   
+     <Text>Refer & Earn</Text>   
      
 </VStack>
 
-<VStack>
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
-     <Text></Text>   
+<VStack width={"20%"} align={"start"}>
+     <Text align={"start"} fontWeight={"bold"}>SUBSCRIBE TO OUR NEWSLETTER</Text>   
+     <Text align={"start"}>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</Text>
+     <Input variant='flushed' placeholder='Enter your email ddress'  />
+    
+    <HStack width={"35%"}>
+        <Image src='https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png' alt =" "/>
+        <Image src='https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png' alt =" "/>
+    </HStack>
 </VStack>
+</HStack>
+<Divider  width={"78%"} color={"gray"} margin={"30px 165px "} orientation='horizontal'  /> 
+  <HStack color={"gray"} width={"100%"} justifyContent={"space-evenly"} >
+  
+  <Text>Medicine</Text>
+  <Text>Wellness</Text>
+  <Text>Lab Tests</Text>
+  <Text>Beauty</Text>
+  <Text>Copyright© 2022. All Rights Reserved.</Text>
   </HStack>
 
    </Box>
+   
   )
 }
