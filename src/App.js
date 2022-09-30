@@ -5,14 +5,18 @@ import Home from "./Components/Home";
 
 import MultipleItems from './Components/Slider';
 import { Footer } from './Components/footer';
+import Products from './Pages/Products';
+import { Cart } from './Pages/Cart';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Home />
-      <Footer/>
-   
+      <Footer />
+      <Products />
+      <Cart />
+
     </div>
   );
 }
