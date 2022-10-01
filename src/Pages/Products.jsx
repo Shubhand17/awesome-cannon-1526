@@ -1,28 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import { Box } from '@chakra-ui/react';
+import { Items } from './Items';
+
+
+
 
 const Products = () => {
-    console.log("working");
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        getProducts();
-    }, [])
-
-    const getProducts = () => {
-        return axios.get("https://netmeds-api-2.onrender.com/products")
-            .then((r) => {
-                // console.log(r.data);
-                setData(r.data);
-            }).catch((e) => {
-                console.log(e)
-            })
-    }
-    console.log(data, "data")
+   
     return (
-        <div>
-            Products
-        </div>
+        <Box width={"100%"} paddingY="20px">
+            <Box width={"70%"} margin={"auto"}  alignSelf={"end"}>
+                <Items />
+            </Box>
+        </Box>
     )
 }
 
-export default Products
+export default Products;

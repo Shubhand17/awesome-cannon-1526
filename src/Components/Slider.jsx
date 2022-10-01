@@ -15,7 +15,7 @@ export function SliderKatrina(props) {
     slidesToShow: 1,
     slidesToScroll: 1
   };
-  console.log(data, "sliderTOpCompanies")
+  // console.log(data, "sliderTOpCompanies")
   return (
     <div style={{ width: "100%", padding: "30px", margin: "auto" }} >
       <Slider {...settings}>
@@ -41,7 +41,7 @@ export function SliderTopCompanies(props) {
     slidesToShow: 3,
     slidesToScroll: 1
   };
-  console.log(data, "sliderTOpCompanies")
+  // console.log(data, "sliderTOpCompanies")
   return (
     <div style={{ width: "100%", padding: "45px", margin: "auto" }} >
       <Slider {...settings}>
@@ -68,7 +68,7 @@ export function SliderCategories(props) {
     slidesToShow: 5,
     slidesToScroll: 1
   };
-  console.log(data, "sliderTOpCompanies")
+  // console.log(data, "sliderTOpCompanies")
   return (
     <div style={{ width: "100%", padding: "45px", margin: "auto" }} >
       <Slider {...settings}>
@@ -96,7 +96,7 @@ export function SliderNewArrivals(props) {
     slidesToShow: 3,
     slidesToScroll: 1
   };
-  console.log(data, "sliderTOpCompanies")
+  // console.log(data, "sliderTOpCompanies")
   return (
     <div style={{ width: "100%", padding: "45px", margin: "auto" }} >
       <Slider {...settings}>
