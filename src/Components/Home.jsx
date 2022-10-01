@@ -1,7 +1,10 @@
 import { Box, Button, HStack, Image, StackDivider, Text, VStack } from '@chakra-ui/react';
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { Footer } from './footer';
 import { SliderCategories, SliderNewArrivals, SliderTopCompanies } from './Slider';
 import { SliderKatrina } from './Slider';
+
 
 const Home = () => {
 
@@ -124,7 +127,7 @@ const Home = () => {
 
             {/* Navbar */}
 
-            <Box width={"100%"} backgroundColor="#32aeb1" margin={"auto"} paddingY="10px" >
+            <Box width={"100%"} backgroundColor="#32aeb1" margin={"auto"} paddingY="20px" >
                 <HStack width={"80%"} margin={"auto"} gap={"10px"} justifyContent={"space-evenly"}>
                     <HStack>
                         <Image padding={"5px"} width={"20%"} borderRadius={"50%"} backgroundColor="#41ced0" src="https://i.ibb.co/Y8Rmx27/medicine.png" alt="" />
@@ -155,13 +158,17 @@ const Home = () => {
                 <Text>Eyewear</Text>
                 <Text>Ayush</Text>
                 <Text>Ayurvedic</Text>
+                <Link to="/products">
+               <Text>Treatments</Text></Link>
                 <Text>Homeopathy</Text>
                 <Text>Fitness</Text>
                 <Text>Mom & Baby</Text>
                 <Text>Devices</Text>
                 <Text>Surgicals</Text>
                 <Text>Sexual Wellnes</Text>
-                <Text>Treatments</Text>
+               
+               
+              
             </HStack>
 
             <Box>
@@ -271,6 +278,8 @@ const Home = () => {
 
 
         </Box>
+       
+        
     )
 }
 

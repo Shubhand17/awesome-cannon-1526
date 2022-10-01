@@ -1,18 +1,19 @@
 import { Box, Button, VStack, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import React from 'react';
 
-export const Cart = () => {
+export const Card = ({ name, price, mrp, image }) => {
     return (
         <Box
             boxSizing="border-box"
-            w="18%"
-            h={"80"}
+            w="100%"
+            padding={"20px"}
             rounded="xl"
             overflow={"hidden"}
-            border="1px solid "
+            // border="1px solid "
             borderColor={"#dddddd"}
-            // boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px;"
-            
+            boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+        // boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px;"
+
         >
             <VStack align={"start"} >
                 <Text
@@ -26,15 +27,15 @@ export const Cart = () => {
                 >15% OFF</Text>
                 <Image
                     alignSelf={"center"}
-                   border="1px solid black"
+                    // border="1px solid black"
                     width={"50%"}
-                    src="https://www.netmeds.com/images/product-v1/150x150/390855/volini_gel_75gm_46854_0_2.jpg"
+                    src={image}
                     alt="" />
 
-                <Text paddingLeft={"14px"} fontWeight={"bold"}> Volini Gel</Text>
+                <Text paddingLeft={"14px"} fontWeight={"bold"}>{name}</Text>
                 <Text paddingLeft={"14px"} fontStyle="italic" fontSize="12px" color="gray">  Mkt: Sun Pharmaceutical Industries Ltd</Text>
-                <Text paddingLeft={"14px"} fontWeight={"bold"}> Best price</Text>
-                <Text paddingLeft={"14px"} >MRP Rs.245.00</Text>
+                <Text paddingLeft={"14px"} fontWeight={"bold"}> Best price : <span style={{ color: "red", fontSize: "16px" }}> {price} </span> </Text>
+                <Text paddingLeft={"14px"} textDecoration={"line-through"} >MRP {mrp}</Text>
                 <Button
                     alignSelf={"center"}
                     justifyContent="center"

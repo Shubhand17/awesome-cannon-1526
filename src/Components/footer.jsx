@@ -51,7 +51,7 @@ export const Footer = () => {
 <VStack width={"20%"} align={"start"}>
      <Text align={"start"} fontWeight={"bold"}>SUBSCRIBE TO OUR NEWSLETTER</Text>   
      <Text align={"start"}>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</Text>
-     <Input variant='flushed' placeholder='Enter your email ddress'  />
+     <Input variant='flushed' placeholder='Enter your email address'  />
     
     <HStack width={"35%"}>
         <Image src='https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png' alt =" "/>

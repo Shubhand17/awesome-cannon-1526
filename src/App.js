@@ -3,19 +3,25 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from "./Components/Home";
 
-import MultipleItems from './Components/Slider';
+
+
+
 import { Footer } from './Components/footer';
 import Products from './Pages/Products';
-import { Cart } from './Pages/Cart';
+import { Card } from './Pages/Card';
+import { Items } from './Pages/Items';
+import { SignIn } from './Pages/SignIn';
+import { SignUp } from './Pages/SignUp';
+import { AllRoutes } from './Pages/AllRoutes';
+import { Order } from './Pages/Order';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      <AllRoutes />
       <Footer />
-      <Products />
-      <Cart />
+      <Order/>
 
     </div>
   );
