@@ -8,12 +8,12 @@ export const Items = () => {
     console.log("working");
     const [data, setData] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         getProducts();
-    },[])
+    }, [])
 
     const getProducts = () => {
-         axios.get("https://netmeds-api-2.onrender.com/products")
+        axios.get("https://netmeds-api-2.onrender.com/products")
             .then((r) => {
                 console.log(r.data)
                 setData(r.data)
@@ -27,7 +27,7 @@ export const Items = () => {
         <Box>
             <SimpleGrid columns={4} spacing={10}>
                 {data && data.map((item) => {
-                    return <Card key={item.id} name={item.name} price={item.price} mrp={item.mrp} image={item.image} />
+                    return <Card key={item.id} id={item.id} name={item.name} price={item.price} mrp={item.mrp} image={item.image} />
                 })}
             </SimpleGrid>
         </Box>

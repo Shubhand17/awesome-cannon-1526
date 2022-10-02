@@ -1,6 +1,7 @@
 import { Box, HStack, Input, VStack, Text, Image, InputGroup, Button, InputLeftAddon, PinInputField, PinInput } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { Payment } from './Payment';
 
 
 export const SignUp = () => {
@@ -69,6 +70,7 @@ export const SignUp = () => {
                             color="white"
                             w="100%"
                         > VERIFY</Button>
+                       
 
                     </Link>
 
